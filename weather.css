@@ -1,0 +1,339 @@
+* {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  background-image: url("cn-tower-sunset.jpg");
+  color: rgb(255, 255, 255);
+}
+#container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("04d.png");
+  display: block;
+}
+
+/* 04d.png */
+
+#input {
+  position: absolute;
+  top: 50px;
+  left: 20vw;
+  width: 60vw;
+  height: 30px;
+  background-color: rgb(192, 204, 212);
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  color: rgb(80, 93, 114);
+  z-index: 3;
+}
+#search {
+  position: absolute;
+  top: 50.8px;
+  left: 75.5vw;
+  width: 5vw;
+  height: 30px;
+  z-index: 3;
+}
+#city {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  z-index: 10;
+}
+
+#description {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  z-index: 5;
+}
+
+#secondDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 250px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgb(137, 151, 160);
+  background: linear-gradient(rgb(137, 151, 160), rgb(149, 172, 187));
+  opacity: 0.7;
+}
+
+#temp {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+#feels {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+#hi {
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+#low {
+  position: relative;
+  top: 70px;
+  left: 20px;
+}
+#wind {
+  position: relative;
+  top: 90px;
+  left: 20px;
+}
+
+#icon {
+  position: relative;
+  top: -60px;
+  left: 170px;
+  width: 80px;
+  display: block;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 700px) {
+  #input {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 4vh;
+    background-color: rgb(192, 204, 212);
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: rgb(80, 93, 114);
+    z-index: 3;
+  }
+
+  #search {
+    position: absolute;
+    top: 10%;
+    left: 68.8%;
+    transform: translate(-50%, -50%);
+    width: 2.5vw;
+    height: 4vh;
+    z-index: 3;
+  }
+
+  #city {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: 10;
+  }
+
+  #description {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    z-index: 5;
+  }
+
+  #secondDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: rgb(137, 151, 160);
+    background: linear-gradient(rgb(137, 151, 160), rgb(149, 172, 187));
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #input {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 4vh;
+    background-color: rgb(192, 204, 212);
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: rgb(80, 93, 114);
+    z-index: 3;
+  }
+
+  #search {
+    position: absolute;
+    top: 10%;
+    left: 63.8%;
+    transform: translate(-50%, -50%);
+    width: 2.5vw;
+    height: 4vh;
+    z-index: 3;
+  }
+  #secondDiv {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: rgb(137, 151, 160);
+    background: linear-gradient(rgb(137, 151, 160), rgb(149, 172, 187));
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #input {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 4vh;
+    background-color: rgb(192, 204, 212);
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: rgb(80, 93, 114);
+    z-index: 3;
+  }
+
+  #search {
+    position: absolute;
+    top: 10%;
+    left: 61.3%;
+    transform: translate(-50%, -50%);
+    width: 2.5vw;
+    height: 4vh;
+    z-index: 3;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #input {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 4vh;
+    height: 30px;
+    background-color: rgb(192, 204, 212);
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: rgb(80, 93, 114);
+    z-index: 3;
+  }
+  #search {
+    position: absolute;
+    top: 10%;
+    left: 77.5%;
+    transform: translate(-50%, -50%);
+    width: 5vw;
+    height: 30px;
+    z-index: 3;
+  }
+  #city {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: 10;
+  }
+
+  #description {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    z-index: 5;
+  }
+
+  #secondDiv {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: rgb(137, 151, 160);
+    background: linear-gradient(rgb(137, 151, 160), rgb(149, 172, 187));
+    opacity: 0.7;
+  }
+
+  #temp {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+  #feels {
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+  #hi {
+    position: relative;
+    top: 50px;
+    left: 20px;
+  }
+  #low {
+    position: relative;
+    top: 70px;
+    left: 20px;
+  }
+  #wind {
+    position: relative;
+    top: 90px;
+    left: 20px;
+  }
+
+  #icon {
+    position: relative;
+    top: -60px;
+    left: 170px;
+    width: 80px;
+    display: block;
+    z-index: 10;
+  }
+}
